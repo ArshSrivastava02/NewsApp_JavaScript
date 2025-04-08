@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: rgb(199, 195, 255);
+}
+.collapse{
+    margin-left: 20%;
+}
+a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-container {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+.card {
+    margin-left: 30px;
+    margin-top: 20px;
+    box-shadow: 0 0 4px #d4ecff;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+} 
+.card:hover {
+    box-shadow: 1px 1px 8px #d4ecff;
+    background-color: #e4f2f8;
+    transform: translate(-2px);
+}
