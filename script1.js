@@ -1,5 +1,5 @@
-const API_KEY = "03ab5f5eb3363da12a68360b232ec492";
-const url = "https://gnews.io/api/v4/search?q=";
+const API_KEY = "46c9bc0dd125456bb097cc020055724c";
+const url = "https://newsapi.org/v2/everything?q=";
 
 window.addEventListener("load", ()=>fetchNews("Technologys"));
 
@@ -32,7 +32,7 @@ function fillDataInCard(cardClone,article) {
     const newsSource = cardClone.querySelector("#news-source");
     const newsDesc = cardClone.querySelector("#news-desc");
 
-    newsImg.src = article.image;
+    newsImg.src = article.urlToImage;
     newsTitle.innerHTML = `${article.title.slice(0,35)}...`;
     newsDesc.innerHTML = `${article.description.slice(0,150)}...`;
 
